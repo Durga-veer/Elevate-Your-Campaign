@@ -1,0 +1,15 @@
+// Metric "ⓘ Explain" popover content, in Beginner and Expert wording.
+export const GLOSSARY: Record<string, { name: string; beginner: string; expert: string; good?: string }> = {
+  ctr: { name: "CTR", beginner: "Out of everyone who saw your ad, the share who clicked it.", expert: "Click-through rate = clicks / impressions. Falls with creative fatigue or poor ad-audience fit.", good: "Higher is better" },
+  cpc: { name: "CPC", beginner: "How much you pay, on average, for one click.", expert: "Cost per click = spend / clicks = CPM / (1000 x CTR). Rises when CTR falls or the auction gets pricier.", good: "Lower is better" },
+  cpm: { name: "CPM", beginner: "The price of showing your ad 1,000 times.", expert: "Cost per mille = spend x 1000 / impressions. Reflects auction competition and audience cost.", good: "Lower is better" },
+  cvr: { name: "Conversion rate", beginner: "Out of the people who clicked, the share who bought.", expert: "CVR = website conversions / clicks. A drop with stable CTR points to a post-click (landing page, checkout, offer) problem.", good: "Higher is better" },
+  cpa: { name: "CPA", beginner: "How much it costs you to get one sale.", expert: "Cost per acquisition = spend / website conversions = CPC / CVR.", good: "Lower is better" },
+  roas: { name: "ROAS", beginner: "How many dollars of sales you get back for each dollar spent on ads.", expert: "Return on ad spend = revenue / spend. Compare with break-even ROAS = 1 / margin.", good: "Higher is better" },
+  frequency: { name: "Frequency", beginner: "How many times, on average, the same person has seen your ad.", expert: "Impressions / reach. Above ~3-4 on prospecting usually precedes creative fatigue.", good: "Moderate is better" },
+  lpRate: { name: "Landing-page view rate", beginner: "Out of the people who clicked, the share whose page actually loaded.", expert: "Landing page views / clicks. Drops indicate slow or broken pages, or redirect issues.", good: "Higher is better" },
+  trackingRatio: { name: "Tracking ratio", beginner: "How many sales the ad platform claims compared with the sales your website really recorded.", expert: "Platform conversions / website conversions. Around 1.0-1.3 is normal; >1.5 suggests duplicate events or attribution changes.", good: "Close to 1.0" },
+  health: { name: "Health score", beginner: "One number (0-100) for how your campaigns are doing overall. Click a part to see why.", expert: "Weighted average of Goal 25%, Conversion 20%, Budget 15%, Creative 15%, Data Quality 15%, Audience 10%. Fully deterministic." },
+  confidence: { name: "Confidence", beginner: "How sure the agent is. 'Likely' = several signals agree. 'Possible' = plausible but less evidence.", expert: "'Likely' requires >= 3 independent supporting signals in the engine output; the Critic downgrades otherwise." },
+  priority: { name: "Priority score", beginner: "Which problem to fix first, based on cost, urgency, certainty, effort and your goal.", expert: "100 x (0.35 impact + 0.20 urgency + 0.20 confidence + 0.10 (1 - effort) + 0.15 goal relevance)." },
+};
